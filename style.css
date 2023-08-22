@@ -8,10 +8,11 @@ body {
   background: linear-gradient(90deg, #6190e8, #a7bfe8);
   overflow-x: hidden;
 }
-ul {
-  text-decoration: none;
-  list-style: none;
-}
+#page{
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+
 #gameboard {
   width: 300px;
   height: 300px;
