@@ -8,10 +8,6 @@ body {
   background: linear-gradient(90deg, #6190e8, #a7bfe8);
   overflow-x: hidden;
 }
-#page{
-  max-width: 1200px;
-  margin: 0 auto;
-} 
 
 #gameboard {
   width: 300px;
@@ -162,11 +158,12 @@ input::placeholder {
 
   border-radius: 20px;
 }
-@media (min-width: 350px) {
+@media (min-width: 320px) {
   .game-section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+   margin: auto;
   }
   header {
     margin-top: 100px;
