@@ -8,57 +8,39 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <h1>TIC TAC TOE</h1>
-      <main>
-        <div class="main-section">
-          <p id="info"></p>
-          <div class="game-section">
-            <div class="player1">
-              <img
-                src="circle.png"
-                alt="Circle Image"
-                style="width: 50px; height: 50px"
-              />
-              <form class="name-section1">
-                <input type="text" id="player1" placeholder="Player 1" />
-                <button class="enter-player1 update" type="button">
-                  Update
-                </button>
-              </form>
-              <p class="paragraf-left"></p>
-            </div>
-            <div id="gameboard"></div>
-            <div class="player2">
-              <img
-                src="cross.png"
-                alt="Cross Image"
-                style="width: 50px; height: 50px"
-              />
-              <form class="name-section2">
-                <input type="text" id="player2" placeholder="Player 2" />
-                <button class="enter-player2 update" type="button">
-                  Update
-                </button>
-              </form>
-              <p class="paragraf-right"></p>
-            </div>
+    <h1>TIC TAC TOE</h1>
+    <main>
+      <div class="main-section">
+        <p id="info"></p>
+        <div class="game-section">
+          <div class="player1">
+            <img
+              src="circle.png"
+              alt="Circle Image"
+              style="width: 50px; height: 50px"
+            />
+            <form class="name-section1">
+              <input type="text" id="player1" placeholder="Player 1" />
+              <button class="enter-player1 update" type="button">Update</button>
+            </form>
+            <p class="paragraf-left"></p>
+          </div>
+          <div id="gameboard"></div>
+          <div class="player2">
+            <img
+              src="cross.png"
+              alt="Cross Image"
+              style="width: 50px; height: 50px"
+            />
+            <form class="name-section2">
+              <input type="text" id="player2" placeholder="Player 2" />
+              <button class="enter-player2 update" type="button">Update</button>
+            </form>
+            <p class="paragraf-right"></p>
           </div>
         </div>
-        <button class="rematch-button">Rematch</button>
-      </main>
-    </div>
+      </div>
+      <button class="rematch-button">Rematch</button>
+    </main>
   </body>
 </html>
