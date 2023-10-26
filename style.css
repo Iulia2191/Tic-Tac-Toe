@@ -185,3 +185,8 @@ input::placeholder {
     flex-direction: column;
   }
 }
+@media (max-width: 1160px) {
+  .game-section{
+    flex-direction: column;
+  }
+}
