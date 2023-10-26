@@ -4,10 +4,25 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(90deg, #6190e8, #a7bfe8);
-
+  background-image: url('38521.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.game-section {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 #gameboard {
   width: 300px;
   height: 300px;
@@ -19,7 +34,6 @@ body {
   flex-wrap: wrap;
   border: 1px solid black;
   z-index: 2;
-  margin: 5%;
 }
 
 .square {
@@ -40,6 +54,8 @@ body {
   border-radius: 50%;
   border: 10px solid rgb(6, 43, 92);
   box-sizing: border-box;
+  flex: 1;
+  color: white;
 }
 
 .Player2 {
@@ -48,6 +64,7 @@ body {
   width: 90px;
   position: relative;
   transform: rotate(45deg);
+  flex: 1;
 }
 
 .Player2:before,
@@ -71,16 +88,6 @@ body {
   width: 100%;
 }
 
-.game-section {
-
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
- 
-}
-
 #info {
   text-align: center;
 }
@@ -95,7 +102,8 @@ img {
 }
 p {
   font-size: 30px;
-  color: #130a8a;
+  color: #f1f0f9;
+  text-shadow: rgb(213, 125, 221) 1px 0 10px;
 }
 .player1,
 .player2 {
@@ -105,11 +113,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
   border-radius: 25px;
   background: linear-gradient(120deg, #130a8a, rgb(108, 97, 93), teal);
   -webkit-background-clip: text;
@@ -147,8 +150,6 @@ input::placeholder {
 }
 .rematch-button {
   z-index: 99;
-  position: relative;
-  left: 50%;
   background-color: rgb(81, 115, 193);
   cursor: pointer;
   padding: 10px;
@@ -157,8 +158,10 @@ input::placeholder {
 
   border-radius: 20px;
 }
-@media (min-width: 320px) {
- 
+@media (max-width: 767px) {
+  body {
+    background-image: url('2150293373.jpg');
+  }
   header {
     margin-top: 100px;
   }
@@ -172,9 +175,13 @@ input::placeholder {
   .rematch-button {
     left: 47%;
   }
-  #gameboard{
+  #gameboard {
     margin: 5%;
   }
+  .game-section {
+    flex-direction: column;
+  }
+  #page {
+    flex-direction: column;
+  }
 }
-
-
